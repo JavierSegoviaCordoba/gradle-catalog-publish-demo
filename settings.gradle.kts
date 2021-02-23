@@ -3,6 +3,16 @@ rootProject.name = providers.gradleProperty("libName").forUseAtConfigurationTime
 
 dependencyResolutionManagement {
     repositories {
+        gradlePluginPortal()
+    }
+}
+
+include(":catalog-settings")
+
+// TODO: Uncomment after run `./gradlew publishToMavenLocal`
+/*
+pluginManagement {
+    repositories {
         mavenCentral()
         gradlePluginPortal()
         mavenLocal {
@@ -12,3 +22,10 @@ dependencyResolutionManagement {
         }
     }
 }
+
+plugins {
+    id("com.javiersc.catalogs.settings") version "1.0.0-SNAPSHOT"
+}
+
+include(":application")
+ */
