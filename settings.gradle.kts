@@ -4,6 +4,16 @@ rootProject.name = providers.gradleProperty("libName").forUseAtConfigurationTime
 dependencyResolutionManagement {
     repositories {
         mavenCentral()
+    }
+}
+
+include(":catalog-precompiled-settings-toml")
+
+// TODO: Uncomment after run `./gradlew publishToMavenLocal`
+/*
+pluginManagement {
+    repositories {
+        mavenCentral()
         gradlePluginPortal()
         mavenLocal {
             content {
@@ -12,3 +22,10 @@ dependencyResolutionManagement {
         }
     }
 }
+
+plugins {
+    id("com.javiersc.catalogs.precompiled-toml") version "1.0.0-SNAPSHOT"
+}
+
+include(":application")
+*/

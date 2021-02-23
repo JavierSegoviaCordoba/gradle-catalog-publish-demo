@@ -1,0 +1,6 @@
+[versions]
+serialization = "1.1.0"
+
+[libraries]
+serialization-core = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-core", version.ref = "serialization" }
+serialization-json = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "serialization" }
