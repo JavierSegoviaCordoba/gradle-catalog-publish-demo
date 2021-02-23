@@ -11,9 +11,6 @@ repositories {
 }
 
 dependencies {
-    implementation(gradleApi())
-    implementation(localGroovy())
-
     gradlePluginsLibs.apply {
         implementation(dokka.core)
         implementation(dokka.plugin)
